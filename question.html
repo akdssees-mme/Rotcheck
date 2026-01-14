@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Rot Check</title>
+      <meta name="description" content="Is it over for you? RotCheck is the best place to test how deeply rotted your brain actually is. If you know the lore, you are already cooked. Take the quiz and see your rank.">
+      <link rel="stylesheet" href="question.css">
+      <link rel="stylesheet" href="index.html">
+    </head>
+    <body>
+      <header class="navbar">
+                <div class="icon-div">
+                    <img class="icon-img" src="Image/Web-icon.png" onclick="window.location.href='index.html'">
+                    <p class="icon-text">Rot <br> Check</p>
+                </div>
+                <!-- Desktop Menu -->
+                <nav class="desktop-menu">
+                    <a href="index.html">Home</a>
+                    <a href="Terms of Services.html">Terms of Services</a>
+                    <a href="privacy&policy.html">privacy&policy</a>
+                </nav>
+                <!-- Hamburger Icon -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="Terms of Services.html">Terms of Services</a>
+            <a href="privacy&policy.html">Privacy & Policy</a>
+        </div>
+
+        <!-- SOUND GATE -->
+        <div id="soundGate" class="overlay">
+          <button id="enableSound" class="overlay-btn">Start Quiz</button>
+        </div>
+
+        <!-- TIME UP -->
+        <div id="timeUp" class="overlay hidden">
+          <h1>Time is up</h1>
+        </div>
+
+        <!-- RESULT -->
+        <div id="resultPopup" class="overlay hidden">
+          <div class="resultBox">
+            <h1 class="result-h1">Score</h1>
+            <h2 id="resultPercent"></h2>
+            <h2 id="resultTitle"></h2>
+            <p id="resultMsg"></p>
+            <button id="restart">Close</button>
+          </div>
+        </div>
+
+        <!-- QUIZ -->
+        <div id="quiz">
+
+          <div class="topBar">
+            <div id="timer">0:10</div>
+            <div id="score">0/10</div>
+          </div>
+
+          <div id="mediaContainer"></div>
+          <div id="questionText">Question goes here</div>
+          <div id="choices"></div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+

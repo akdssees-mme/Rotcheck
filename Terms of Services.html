@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Is it over for you? RotCheck is the best place to test how deeply rotted your brain actually is. If you know the lore, you are already cooked. Take the quiz and see your rank.">
+    <title>Rot Check</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Terms of service.css">
+    <link rel="stylesheet" href="General.css">
+    <link rel="stylesheet" href="Header.css">
+</head>
+<body>
+    <header class="navbar">
+            <div class="icon-div">
+                <img class="icon-img" src="Image/Web-icon.png" onclick="window.location.href='index.html'">
+                <p class="icon-text">Rot <br> Check</p> 
+            </div>
+            <!-- Desktop Menu -->
+            <nav class="desktop-menu">
+                <a href="index.html">Home</a>
+                <a href="question.html">Start quiz</a>
+                <a href="privacy&policy.html">privacy&policy</a>
+            </nav>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="question.html">Start quiz</a>
+        <a href="privacy&policy.html">Privacy & Policy</a>
+    </div>
+    <section class="terms-of-service">
+  <h1>Terms of Service</h1>
+
+  <div class="tos-section">
+    <h2>1. Acceptance of Terms</h2>
+    <p>
+      By accessing or using this Meme Quiz website, you agree to be bound by these Terms of Service.
+      If you do not agree with any part of these terms, please discontinue use of the website.
+    </p>
+  </div>
+
+  <div class="tos-section">
+    <h2>2. Use of the Website</h2>
+    <p>
+      This website is provided for entertainment purposes only. Users may access and use the content
+      for personal, non-commercial use. Misuse of the website or its content is prohibited.
+    </p>
+  </div>
+
+  <div class="tos-section">
+    <h2>3. Intellectual Property</h2>
+    <p>
+      All content on this website, including text, visuals, quizzes, and designs, is owned by the
+      website or used under fair use. Unauthorized reproduction or distribution is not allowed.
+    </p>
+  </div>
+
+  <div class="tos-section">
+    <h2>4. User Conduct</h2>
+    <p>
+      Users agree not to engage in any activity that disrupts the website, attempts to gain
+      unauthorized access, or violates applicable laws or regulations.
+    </p>
+  </div>
+
+  <div class="tos-section">
+    <h2>5. Third-Party Content</h2>
+    <p>
+      The website may include third-party links, media, or advertisements. We are not responsible
+      for the content, accuracy, or practices of third-party services.
+    </p>
+  </div>
+
+  <div class="tos-section">
+    <h2>6. Disclaimer</h2>
+    <p>
+      All content is provided “as is” without warranties of any kind. We do not guarantee uninterrupted
+      access, error-free operation, or accuracy of quiz results.
+    </p>
+  </div>
+
+  <div class="tos-section">
+    <h2>7. Limitation of Liability</h2>
+    <p>
+      We are not liable for any damages resulting from the use or inability to use the website,
+      including data loss or service interruptions.
+    </p>
+  </div>
+
+  <div class="tos-section">
+    <h2>8. Termination</h2>
+    <p>
+      We reserve the right to suspend or terminate access to the website at any time without notice
+      if these terms are violated.
+    </p>
+  </div>
+
+  <div class="tos-section">
+    <h2>9. Changes to Terms</h2>
+    <p>
+      These Terms of Service may be updated at any time. Continued use of the website indicates
+      acceptance of the revised terms.
+    </p>
+  </div>
+
+  <div class="tos-section">
+    <h2>10. Contact Information</h2>
+    <p>
+      If you have any questions regarding these Terms of Service, please contact us through the website.
+    </p>
+  </div>
+</section>
+
+<footer>
+        <div class="links-div">
+            <a href="question.html">Quiz</a>
+            <a href="privacy&policy.html">Privacy & policy</a>
+            <a href="Terms of Services.html">Terms of condition</a>
+            <a href="">Contact: +1(555) 782-3410 <br> RotCheck.online@gmail.com</a>
+            <div class="copy-div">
+            <p class="copy-text"> &copy; All rights preserved</p>
+        </div>
+        </div>
+        
+    </footer>
+
+    <script>
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+
+            hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+            });
+       </script>
+</body>
+</html>

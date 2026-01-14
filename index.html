@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rot Check</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <meta name="description" content="Is it over for you? RotCheck is the best place to test how deeply rotted your brain actually is. If you know the lore, you are already cooked. Take the quiz and see your rank.">
+        <link rel="stylesheet" href="Home.css"> 
+        <link rel="stylesheet" href="General.css">
+        <link rel="stylesheet" href="Header.css"> 
+        <link rel="stylesheet" href="question.html">
+        <link rel="icon" type="image/png" href="favicon.png">  
+    </head>
+
+    <body>
+       <header class="navbar">
+            <div class="icon-div">
+                <img class="icon-img" src="Image/Web-icon.png" onclick="window.location.href='index.html'">
+                <p class="icon-text">Rot <br> Check</p>
+            </div>
+            <!-- Desktop Menu -->
+            <nav class="desktop-menu">
+                <a href="question.html">Start quiz</a>
+                <a href="Terms of Services.html">Terms of service</a>
+                <a href="privacy&policy.html">privacy & policy</a>
+            </nav>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="question.html">Start quiz</a>
+        <a href="privacy&policy.html">Privacy & Policy</a>
+        <a href="Terms of Services.html">Terms & Conditions</a>
+    </div>
+
+    <main>
+        <div class="section-one">
+         <div class="section-one-text-div">
+            <p class="section-one-text">See how cooked<br> your Brain is</p>
+         </div>
+         <div class="Section-1-img-div">
+            <img class="Section-1-img" src="Image/Section-1-img.png" alt="">
+         </div>
+         <div class="section-one-btn-div">
+            <button onclick="location.href='question.html'" class="section-one-btn">
+                Start quiz
+            </button>
+
+         </div>
+        </div>
+
+        <div class="section-two">
+          <div class="section-two-text-div">
+            <p class="section-two-text">Score Interpretetion</p>
+          </div> 
+          
+          
+            <div class="card">
+                <div class="right-side">
+                    <img class="card-icon" src="Image/level-1-img.png" alt="">
+                    <p class="right-side-text">0 - 24</p>
+                </div>
+                <div class="left-side">
+                    <h2 class="state-name">Neural Balance</h2>
+                    <p class="state-message">Cognitive systems operating within normal parameters</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="right-side">
+                    <img class="card-icon3" src="Image/level-2-img.png" alt="">
+                    <p class="right-side-text">25 - 49</p>
+                </div>
+                <div class="left-side">
+                    <h2 class="state-name">Cognitive Drift</h2>
+                    <p class="state-message">Attention is fragmented but core function remains intact</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="right-side">
+                    <img class="card-icon2" src="Image/level-3-img.png" alt="">
+                    <p class="right-side-text">50 - 74</p>
+                </div>
+                <div class="left-side">
+                    <h2 class="state-name">Neural Fatigue</h2>
+                    <p class="state-message">Recovery is possible, but further exposure is not advised</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="right-side">
+                    <img class="card-icon2" src="Image/level-4-img.PNG" alt="">
+                    <p class="right-side-text">75 - 100</p>
+                </div>
+                <div class="left-side">
+                    <h2 class="state-name">Cognitive Collapse</h2>
+                    <p class="state-message">Prolonged exposure to online stimuli has resulted in mental failure</p>
+                </div>
+            </div>
+
+            <div class="section-one-btn-div">
+                <button class="section-two-btn">Start</button>
+            </div>
+
+        </div>
+
+        <div class="section-three">
+            <div class="section3-img-div">
+                <img class="section-3-img" src="Image/Section3-img.jpg" alt="">
+            </div>
+            <div class="section3-text-div">
+                <h2 class="section-3-header">Think You're healing ?</h2>
+                <p class="section-3-para">There is a context behind this test. <br> see how rotted you are.</p>
+            </div>
+
+            <div class="section3-btn-div">
+            <button class="section3-btn">Take Test</button>
+         </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="links-div">
+            <a href="question.html">Quiz</a>
+            <a href="privacy&policy.html">Privacy & policy</a>
+            <a href="Terms of Services.html">Terms of condition</a>
+            <a href="">Contact: +1(555) 782-3410 <br> RotCheck.online@gmail.com</a>
+            <div class="copy-div">
+            <p class="copy-text"> &copy; All rights preserved</p>
+        </div>
+        </div>
+        
+    </footer>
+       <script>
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+
+            hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+            });
+       </script>
+    </body>
+
+</html>
