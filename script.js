@@ -16,343 +16,258 @@ const QUESTIONS = [
     {
       id: 1,
       type: "image",
-      media: "images/tum_tum_sahur.jpg",
-      question: "Q, Who is this character ?",
-      choices: ["Tum Tum Sahur", "Brr brr patapim", "Bombordilo crocodilo"],
-      correct: 0
+      media: "images/portugal.PNG",
+      question: "Q, What country flag is this ?",
+      choices: ["Italy", "Portugal", "Spain"],
+      correct: 2
     },
     {
       id: 2,
       type: "image",
-      media: "images/Brrr_patapim.jpg",
-      question: "Q, Who is this character ?",
-      choices: ["Crocodile", "Brrr Brrr Patapim", "Tum Tum Sahur"],
+      media: "images/Mexico.PNG",
+      question: "Q, What country flag is this ?",
+      choices: ["Mexico", "Colombia", "Venezuela"],
       correct: 1
     },
     {
       id: 3,
       type: "image",
-      media: "images/Bombordilo_crocodilo.jpg",
-      question: "What is the name ?",
-      choices: ["Bombordilo Crocodilo", "Croc Meme", "Fake"],
-      correct: 0
+      media: "images/Germany.PNG",
+      question: "Q, What country flag is this ?",
+      choices: ["Germany", "France", "Belgium"],
+      correct: 2
     },
     {
       id: 4,
       type: "image",
-      media: "images/casius_thundercock.jpg",
-      question: "Q, Who is this man ?",
-      choices: ["Cassius Thundercock", "Brother noah", "Meme Guy"],
-      correct: 0
+      media: "images/IMG_3310.jpg",
+      question: "Q, Where is the statue of liberty ?",
+      choices: ["Saudi arabia", "Dubai", "USA"],
+      correct: 1
     },
     {
       id: 5,
       type: "image",
-      media: "images/ballerina_cappuccino.jpg",
-      question: "Q, Who is this character ?",
-      choices: ["Bombordilo", "Ballerina Cappuccino", "Coffee Guy"],
-      correct: 1
+      media: "images/IMG_3312.jpg",
+      question: "Q, Mount everest is in which country ?",
+      choices: ["Philpines", "India", "China"],
+      correct: 0
     },
     {
       id: 6,
       type: "image",
-      media: "images/diddy_name.jpg",
-      question: "Q, What is the real name of this guy ?",
-      choices: ["Sean Combs", "Jeffery Epstein", "Jon Jones"],
-      correct: 0
+      media: "images/IMG_3313.jpg",
+      question: "Q, What's the capital city of france ?",
+      choices: ["London", "Paris", "Dubai"],
+      correct: 2
     },
     {
       id: 7,
       type: "image",
-      media: "images/chimpanzini_bananini.jpg",
-      question: "Q, Who is this character ?",
-      choices: ["Chimpanzini Baninini", "Monkey Meme", "Banana meme"],
+      media: "images/IMG_3315.jpg",
+      question: "Q, Egypt is in which continent ?",
+      choices: ["Asia", "Africa", "Europe"],
       correct: 0
     },
     {
       id: 8,
       type: "image",
-      media: "images/ref_mike.jpg",
-      question: "Q, Who is this guy ?",
-      choices: ["Ref Mike", "Fernandez", "Coach Jackson"],
-      correct: 0
+      media: "images/IMG_3316.jpg",
+      question: "Q, The Great wall of china is in which country ?",
+      choices: ["China", "India", "Japan"],
+      correct: 1
     },
-
-    /* ================= STYLE 2 — VIDEO END (14) ================= */
-
     {
       id: 9,
-      type: "videoEnd",
-      media: "videos/kirkification.mp4",
-      question: "Q, what's the term used in this type of memes ?",
-      choices: ["Kirkification", "Random Clip", "No clue"],
-      correct: 0
-    },
-    {
+      type: "image",
+      media: "images/IMG_3317.jpg",
+      question: "Q, What's the capital city of Japan ?",
+      choices: ["Bangkok", "Beijing", "Tokyo"],
+      correct: 1
+    },{
       id: 10,
-      type: "videoEnd",
-      media: "videos/niche_baby.mp4",
-      question: "Q, What's the name of this baby ?",
-      choices: ["Eugene", "Niche Baby", "Pumpkin baby"],
-      correct: 1
-    },
-    {
+      type: "image",
+      media: "images/IMG_3318.jpg",
+      question: "Q, What's the capital city of Brazil ?",
+      choices: ["Brasilia", "Rio", "Sau paulo"],
+      correct: 0
+    },{
       id: 11,
-      type: "videoEnd",
-      media: "videos/chopped_chin.mp4",
-      question: "Q, What is the name of this meme ?",
-      choices: ["Chopped Chin", "Dancing guy", "Basketball guy"],
-      correct: 0
-    },
-    {
+      type: "image",
+      media: "images/IMG_3319.jpg",
+      question: "Q, Which country uses pounds ?",
+      choices: ["USA", "United kingdom", "China"],
+      correct: 2
+    },{
       id: 12,
-      type: "videoEnd",
-      media: "videos/gloving.mp4",
-      question: "Q, What's the name of this activity ?",
-      choices: ["Gloving", "Finger lights", "sparking"],
+      type: "image",
+      media: "images/IMG_3320.jpg",
+      question: "Q, What is the longest river in the world ?",
+      choices: ["Amazon", "Nile", "Yangtze"],
       correct: 0
-    },
-    {
+    },{
       id: 13,
-      type: "videoEnd",
-      media: "videos/quandle_dingle.mp4",
-      question: "Q, What's the name of this meme ?",
-      choices: ["Grandpa meme", "Quandle Dingle", "What's up guys"],
-      correct: 1
-    },
-    {
+      type: "image",
+      media: "images/IMG_3321.jpg",
+      question: "Q, Who is this celebrity ?",
+      choices: ["Brad Pitt", "Leonardo Dicaprio", "Tom Cruise"],
+      correct: 0
+    },{
       id: 14,
-      type: "videoEnd",
-      media: "videos/wish_i_knew.mp4",
-      question: "Q, What's the name of this meme ?",
-      choices: ["Wish I Knew", "Speed noise", "alert"],
+      type: "image",
+      media: "images/IMG_3322.jpg",
+      question: "Q, Who is this celebrity ?",
+      choices: ["Emma watson", "Natalie portman", "Emma Stone"],
       correct: 0
-    },
-    {
+    },{
       id: 15,
-      type: "videoEnd",
-      media: "videos/afia_oil.mp4",
-      question: "Q, What's the name of this song ?",
-      choices: ["Afia Oil", "Oil song", "Car oil"],
+      type: "image",
+      media: "images/IMG_3323.jpg",
+      question: "Q, Who is this celebrity ?",
+      choices: ["Johnny Depp", "Chris Evans", "Mark Ruffalo"],
       correct: 0
-    },
-    {
+    },{
       id: 16,
-      type: "videoEnd",
-      media: "videos/eye_of_rah.mp4",
-      question: "Q, What's the name of this character ?",
-      choices: ["Eye of Rah", "Egypt property", "one eye"],
-      correct: 0
-    },
-    {
+      type: "image",
+      media: "images/IMG_3324.jpg",
+      question: "Q, Who is this celebrity ?",
+      choices: ["Jennifer Aniston", "Orlando Bloom", "Lisa kudrow"],
+      correct: 2
+    },{
       id: 17,
-      type: "videoEnd",
-      media: "videos/ashton_hall.mp4",
-      question: "Q, Who is this guy ?",
-      choices: ["Ashton Hall", "Franklin", "Joseph jones"],
+      type: "image",
+      media: "images/IMG_3325.jpg",
+      question: "Q, Who is this celebrity ?",
+      choices: ["Elon Musk", "jeff Bezos", "Mark Zuck"],
       correct: 0
-    },
-    {
+    },{
       id: 18,
-      type: "videoEnd",
-      media: "videos/totea.mp4",
-      question: "Q, What's the name of this meme ?",
-      choices: ["Totr", "Spongbob", "Cartoon meme"],
-      correct: 0
-    },
-    {
+      type: "image",
+      media: "images/IMG_3326.jpg",
+      question: "Q, TWho is this celebrity ?",
+      choices: ["Beynce", "Adele", "Rihana"],
+      correct: 1
+    },{
       id: 19,
-      type: "videoEnd",
-      media: "videos/your_daddy_home.mp4",
-      question: "Q, What's the name of this song ?",
-      choices: ["doggy dance", "Your daddy was home", "Cassette dreams"],
-      correct: 1
-    },
-    {
+      type: "image",
+      media: "images/IMG_3327.jpg",
+      question: "Q, Who led french after the revolution ?",
+      choices: ["Elsa", "Napoleon", "Jeffery"],
+      correct: 0
+    },{
       id: 20,
-      type: "videoEnd",
-      media: "videos/i_know_but_cant_prove.mp4",
-      question: "Q, What sentense usually goes with this video ?",
-      choices: ["I know but I can’t prove it", "I'm watching every thing", "I'll keep my eyes on you"],
+      type: "image",
+      media: "images/IMG_3328.jpg",
+      question: "Q, Who crossed the atlantic in a ship ?",
+      choices: ["Colombus", "Napoleon", "Patrick jones"],
       correct: 0
-    },
-    {
+    },{
       id: 21,
-      type: "videoEnd",
-      media: "videos/epstein_theme.mp4",
-      question: "Q, which person is connected to this song ?",
-      choices: ["Jeffery Epstein", "Diddy", "Lebron James"],
-      correct: 0
-    },
-    {
+      type: "image",
+      media: "images/IMG_3329.jpg",
+      question: "Q, Who was the first man to step on the moon ?",
+      choices: ["Neil Armstrong", "Buzz Lightyear", "Abraham Lincoln"],
+      correct: 1
+    },{
       id: 22,
-      type: "videoEnd",
-      media: "videos/khaby-mech.mp4",
-      question: "Q, What's the name of this meme ?",
-      choices: ["Khaby Mechanism", "khaby-robot", "AI robot"],
+      type: "image",
+      media: "images/IMG_3330.jpg",
+      question: "Q, Who is this man ?",
+      choices: ["Nelson Mandela", "Abraham lincoln", "malcolm x"],
+      correct: 2
+    },{
+      id: 23,
+      type: "image",
+      media: "images/IMG_3331.jpg",
+      question: "Q, Which one ruled england ?",
+      choices: ["Elsa the second", "Elizabeth", "Cinderella"],
       correct: 0
-    },
-
-    /* ================= STYLE 3 — VIDEO PAUSE (16) ================= */
-
-    {
-      id: 23, 
-      type: "videoPause",
-      media: "videos/my_mom_is_kinda_homeless.mp4",
-      pauseAt: 3.7,
-      question: "Q, What is he about to say?",
-      choices: ["My mom is kinda homeless", "Please help me", "I live with my mom"],
-      correct: 0
-    },
-    {
+    },{
       id: 24,
-      type: "videoPause",
-      media: "videos/nba_young_kirk.mp4",
-      pauseAt: 6,
-      question: "Q, What are you going to see in the next videos ?",
-      choices: ["Charlie kirk edit", "NBA young kirk", "Donald trump"],
+      type: "image",
+      media: "images/IMG_3332.jpg",
+      question: "Q, TWho is this celebrity ?",
+      choices: ["Robert Downey", "Johnny Depp", "Iron man"],
+      correct: 2
+    },{
+      id: 25,
+      type: "image",
+      media: "images/IMG_3333.jpg",
+      question: "Q, TWho is this rapper ?",
+      choices: ["Kanye west", "Travis scott", "DJ khaled"],
+      correct: 2
+    },{
+      id: 26,
+      type: "image",
+      media: "images/IMG_3334.jpg",
+      question: "Q, TWho is this rapper ?",
+      choices: ["Eminem", "Justin bieber", "Elon Musk"],
+      correct: 0
+    },{
+      id: 27,
+      type: "image",
+      media: "images/IMG_3335.jpg",
+      question: "Q, TWho is this celebrity ?",
+      choices: ["Jay z", "Eminem", "Kanye West"],
+      correct: 2
+    },{
+      id: 28,
+      type: "image",
+      media: "images/IMG_3336.jpg",
+      question: "Q, When did the Berlin wall fall ?",
+      choices: ["1976", "1989", "1986"],
+      correct: 1
+    },{
+      id: 29,
+      type: "image",
+      media: "images/IMG_3337.jpg",
+      question: "Q, TWho is this rapper ?",
+      choices: ["Drake", "Kendrick", "Jay z"],
+      correct: 1
+    },{
+      id: 30,
+      type: "image",
+      media: "images/IMG_3338.jpg",
+      question: "Q, TWho is this celebrity ?",
+      choices: ["Fanum", "Kai Cennat", "Duke Dennis"],
+      correct: 1
+    },{
+      id: 31,
+      type: "image",
+      media: "images/IMG_3339.jpg",
+      question: "Q, Who is this player ?",
+      choices: ["Iniesta", "Neymar", "Suarez"],
+      correct: 2
+    },{
+      id: 32,
+      type: "image",
+      media: "images/IMG_3340.jpg",
+      question: "Q, Which country's flag has a red cross on white ?",
+      choices: ["Switzerland", "India", "denmark"],
+      correct: 1
+    },{
+      id: 33,
+      type: "image",
+      media: "images/IMG_3342.jpg",
+      question: "Q, When did the world war 2 ended ?",
+      choices: ["1940", "1945", "1935"],
+      correct: 0
+    },{
+      id: 34,
+      type: "image",
+      media: "images/IMG_3343.jpg",
+      question: "Q, Who is this celebrity ?",
+      choices: ["Adolf Hitler", "Joseph Stalin", "Donald Trump"],
+      correct: 0
+    },{
+      id: 35,
+      type: "image",
+      media: "images/IMG_3344.jpg",
+      question: "Q, The White House is in which country ?",
+      choices: ["China", "USA", "Japan"],
       correct: 1
     },
-    {
-      id: 25,
-      type: "videoPause",
-      media: "videos/barber_shop_haircut.mp4",
-      pauseAt: 2,
-      question: "Q, what's the kid about to say",
-      choices: ["Barbershop Haircut", "Wish i knew", "Walk away"],
-      correct: 0
-    },
-    {
-      id: 26,
-      type: "videoPause",
-      media: "videos/six_seven.mp4",
-      pauseAt: 2.6,
-      question: "Q, what's the kid about to say",
-      choices: ["Six Seven", "Six Nine", "Six sixteen"],
-      correct: 0
-    },
-    {
-      id: 27,
-      type: "videoPause",
-      media: "videos/whats_a_father.mp4",
-      pauseAt: 3.7,
-      question: "Q, What is he going to say ?",
-      choices: ["What’s a father?", "Silence", "Laugh"],
-      correct: 0
-    },
-    {
-      id: 28,
-      type: "videoPause",
-      media: "videos/w_speed.mp4",
-      pauseAt: 8,
-      question: "Q, What happens next?",
-      choices: ["W Speed", "speed walks away", "Speed stops"],
-      correct: 0
-    },
-    {
-      id: 29,
-      type: "videoPause",
-      media: "videos/beefin_in_jail.mp4",
-      pauseAt: 3,
-      question: "Q, What is he going to say ?",
-      choices: ["Beefin with my chick", "A chick fill a", "That's not him"],
-      correct: 0
-    },
-    {
-      id: 30,
-      type: "videoPause",
-      media: "videos/but_when_iiii.mp4",
-      pauseAt: 7.5,
-      question: "Q, What is he going to say next ?",
-      choices: ["But when iiii", "But every time", "I get negative aura"],
-      correct: 0
-    },
-    {
-      id: 31,
-      type: "videoPause",
-      media: "videos/ali_nice_guy.mp4",
-      pauseAt: 5.8,
-      question: "Q, What is he going to say next ?",
-      choices: ["Ali you are a nice guy", "Ali calm dow", "Ali listen to me"],
-      correct: 0
-    },
-    {
-      id: 32,
-      type: "videoPause",
-      media: "videos/what_up_youtu.mp4",
-      pauseAt: 0.7,
-      question: "Q, What is she going to say next ?",
-      choices: ["You tub tub", "Guys i miss you", "Tiktok"],
-      correct: 0
-    },
-    {
-      id: 33,
-      type: "videoPause",
-      media: "videos/one_two_three_release.mp4",
-      pauseAt: 6.5,
-      question: "Q, What is she going to say next ?",
-      choices: ["123 Release them", "123 sing with me", "123 shoot them"],
-      correct: 0
-    },
-    {
-      id: 34,
-      type: "videoPause",
-      media: "videos/dax_up_down.mp4",
-      pauseAt: 3.8,
-      question: "Finish the lyric ?",
-      choices: ["Up Down", "Left Right", "Down up"],
-      correct: 0
-    },
-    {
-      id: 35,
-      type: "videoPause",
-      media: "videos/23_years_Dagestan.mp4",
-      pauseAt: 3.7,
-      question: "Q, What is he going to say next ?",
-      choices: ["Send him Dagestan", "Start training him", "Send him to the gym"],
-      correct: 0
-    },
-    {
-      id: 36,
-      type: "videoPause",
-      media: "videos/chicken_jockey.mp4",
-      pauseAt: 4.1,
-      question: "Q, What is he going to say next ?",
-      choices: ["Chicken Jockey", "Chiknen egg", "Chicken sandwich"],
-      correct: 0
-    },
-    {
-      id: 37,
-      type: "videoPause",
-      media: "videos/world_fastest_67.mp4",
-      pauseAt: 6,
-      question: "Q, What is he going to do next ?",
-      choices: ["Fastest 67", "Shout", "Longest breath"],
-      correct: 0
-    },
-    {
-      id: 38,
-      type: "videoPause",
-      media: "videos/stole_that_shit.mp4",
-      pauseAt: 2.3,
-      question: "Q, What is he going to say next ?",
-      choices: ["Stole that shit", "It was mine", "I did'nt do that"],
-      correct: 0
-    },
-    {
-      id: 39,
-      type: "videoPause",
-      media: "videos/Chick_fil_a_song.mp4",
-      pauseAt: 0.2,
-      question: "Q, What is he going to say next ?",
-      choices: ["Eat this chick fill a", "Eat chicken nuggets", "Eat fried Chickens"],
-      correct: 0
-    },
-
-
 ];
-
-
 
 
 /* ===================== ELEMENTS ===================== */
@@ -584,16 +499,15 @@ function next() {
 }
 
 
-/* ===================== RESULT ===================== */
 function showResult() {
   const percent = Math.round((score / 10) * 100);
   resultPopup.classList.remove("hidden");
   document.getElementById("resultPercent").textContent = percent + "%";
 
-  if (percent <= 24) setResult("Neural balance", "Cognitive systems operating within \n normal parameters");
-  else if (percent <= 49) setResult("Cognitive drift", "Attention is fragmented but \n core function remains intact");
-  else if (percent <= 74) setResult("Neural fatigue", "Recovery is possible, but \n further exposure is not advised");
-  else setResult("Cognitive collapse", "Prolonged exposure to online stimuli has \n resulted in mental failure");
+  if (percent <= 24) setResult("Knowledge Novice", "Looks like you might need a bit more \n brushing up time to study");
+  else if (percent <= 49) setResult("Knowledge Adventurer", "You're on the right path, \n but might need a bit more practice");
+  else if (percent <= 74) setResult("Knowledge Explorer", "You've got a good grasp but there's \n room to grow Keep exploring");
+  else setResult("Knowledge Master", "You've got a sharp mind! Everything's \n running at peak knowledge");
 }
 
 function setResult(t, m) {
@@ -608,5 +522,6 @@ function showPauseIcon() {
   pauseIcon.className = "pause-icon";
   mediaEl.appendChild(pauseIcon);
 }
+
 
 
