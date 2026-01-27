@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="General.css">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+     <header class="navbar">
+            <div class="icon-div">
+                <img class="icon-img" src="Image/Newicon.png" onclick="window.location.href='index.html'">
+                <p class="icon-text">Rot <br> Check</p>
+            </div>
+            <!-- Desktop Menu -->
+            <nav class="desktop-menu">
+                <a href="question.html">Start Game</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="Terms of Services.html">Terms of service</a>
+                <a href="privacy&policy.html">privacy & policy</a>
+            </nav>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="question.html">Start quiz</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy&policy.html">Privacy & Policy</a>
+        <a href="Terms of Services.html">Terms & Conditions</a>
+    </div>
+
+<div class="contact-container">
+<h1>Contact Us</h1>
+<p class="subtitle">
+Have a question, suggestion, or found a bug?
+Feel free to reach out.
+</p>
+
+<form class="contact-form">
+<label for="name">Name</label>
+<input type="text" id="name" placeholder="Your name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="Your email" required>
+
+<label for="message">Message</label>
+<textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+
+<button type="submit">Send Message</button>
+</form>
+</div>
+
+<footer>
+        <div class="links-div">
+            <a href="question.html">Game</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy&policy.html">Privacy & policy</a>
+            <a href="Terms of Services.html">Terms of condition</a>
+            <hr style="width: 350px; color: rgb(129, 129, 129); margin-top: 20px; height: 1px;">
+            <div class="copy-div">
+            <p class="copy-text"> &copy;RotCheck.online All rights preserved</p>
+        </div>
+        </div>
+        
+    </footer>
+
+<script>
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+
+            hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+            });
+</script>
+
+</body>
+</html>
