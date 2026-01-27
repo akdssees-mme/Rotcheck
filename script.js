@@ -1,528 +1,153 @@
- const hamburger = document.getElementById("hamburger");
- const mobileMenu = document.getElementById("mobileMenu");
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
 
- hamburger.addEventListener("click", () => {
- hamburger.classList.toggle("active");
- mobileMenu.classList.toggle("active");
-});
+hamburger.addEventListener("click", () => {
+hamburger.classList.toggle("active");
+mobileMenu.classList.toggle("active");
+            });
+// List of questions/images (40 total)
+const questions = [
+{ img: 'images/IMG_3508.jpg', type: 'politician', name: 'Milan Knezevich', info: 'Memeber of the parliament of Montenegro' },
+{ img: 'images/IMG_3509.jpg', type: 'politician', name: 'Zsolt Semjen', info: 'Deputy PM of Hungary' },
+{ img: 'images/IMG_3510.jpg', type: 'politician', name: 'Robert Kalinak', info: 'Deputy PM of the Solvak' },
+{ img: 'images/IMG_3511.jpg', type: 'politician', name: 'Ivan Malenicia', info: 'Memeber Croatian parliament' },
+{ img: 'images/IMG_3512.jpg', type: 'politician', name: 'Darko Harvart', info: 'Former Minister of assets of Croatia' },
+{ img: 'images/IMG_3513.jpg', type: 'politician', name: 'Bheki Cele', info: 'Former minister of police of S.Africa' },
+{ img: 'images/IMG_3514.jpg', type: 'politician', name: 'Fikile Mbalula', info: 'Former minister of police of S.Africa' },
+{ img: 'images/IMG_3515.jpg', type: 'politician', name: 'Abdulrazak Gurnah', info: 'Tanzanian novalist and academic' },
+{ img: 'images/IMG_3516.jpg', type: 'politician', name: 'Ahmed Maiteeq', info: 'Former PM of Libya' },
+{ img: 'images/IMG_3517.JPG', type: 'politician', name: 'Hadi Al-Amiri', info: 'Member of the council of Iraq' },
+{ img: 'images/IMG_3518.jpg', type: 'politician', name: 'Luis Fernando', info: 'Governor of Santa Cruz Department' },
+{ img: 'images/IMG_3519.jpg', type: 'politician', name: 'Manuel Baldizon', info: 'Former member of the congress of Gutamala' },
+{ img: 'images/IMG_3520.jpg', type: 'politician', name: 'Fransisco santos', info: 'Former vice president of Colombia' },
+{ img: 'images/IMG_3522.JPG', type: 'politician', name: 'Bongani Bongo', info: 'Former minister of security of S.Africa' },
+{ img: 'images/IMG_3523.jpg', type: 'politician', name: 'Sakaja Johnson', info: 'Governor of Nairobi Country' },
+{ img: 'images/IMG_3527.jpg', type: 'politician', name: 'Nomvula mokon', info: 'Former minister of technology of S.Africa' },
+{ img: 'images/IMG_3486.jpg', type: 'politician', name: 'Abdulghani Baradar', info: 'Deputy PM for Economic Affair of Afganistan' },
+{ img: 'images/IMG_3504.GIF', type: 'politician', name: 'Eduardo Leite', info: 'Governor of Rio Grando Do Sul' },
+{ img: 'images/IMG_3506.jpg', type: 'politician', name: 'Andres Babis', info: 'PM Minister of the Czech Republic' },
+{ img: 'images/IMG_3507.jpg', type: 'politician', name: 'Herman Mashaba', info: 'President of ActionSA' },
+
+{ img: 'images/IMG_3529.jpg', type: 'criminal', name: 'Joseph Anthony', info: 'Italian-American mobster' },
+{ img: 'images/IMG_3530.JPG', type: 'criminal', name: 'Bhadreshkumar', info: 'Killed his own wife' },
+{ img: 'images/IMG_3531.jpg', type: 'criminal', name: 'Yulan Adonay', info: 'Leader of MS-13' },
+{ img: 'images/IMG_3532.jpg', type: 'criminal', name: 'Ruja Ignatova', info: 'Leading a $4 Billion money laundering scheme' },
+{ img: 'images/IMG_3533.jpg', type: 'criminal', name: 'Ryan Weeding', info: 'Drug trafficking and oredering multiple murders' },
+{ img: 'images/IMG_3534.JPG', type: 'criminal', name: 'Roman Semenov', info: 'Launder over $1 Billion' },
+{ img: 'images/IMG_3535.jpg', type: 'criminal', name: 'Robert William', info: 'Killed his wife, two childrens and blowed their home' },
+{ img: 'images/IMG_3536.jpg', type: 'criminal', name: 'Donald Eugene', info: 'Sex trafficking of childrens' },
+{ img: 'images/IMG_3538.jpg', type: 'criminal', name: 'Yasser Said', info: 'Killed his two daughters' },
+{ img: 'images/IMG_3539.jpg', type: 'criminal', name: 'Arnold Jimenez', info: 'Killed his wife on the wedding night' },
+{ img: 'images/IMG_3541.jpg', type: 'criminal', name: 'Erik Kristian', info: 'A convicted child molester' },
+{ img: 'images/IMG_3542.jpg', type: 'criminal', name: 'Fausto Esidro', info: 'Distribution of heroin, cocaine and meth' },
+{ img: 'images/IMG_3544.jpg', type: 'criminal', name: 'Sidney Rodriguez', info: 'Murdered her own 3-years old son' },
+{ img: 'images/IMG_3545.jpg', type: 'criminal', name: 'Ted Bundy', info: 'Confessed to killing 30 people' },
+{ img: 'images/IMG_3546.jpg', type: 'criminal', name: 'Jeffery Dahmer', info: 'Serial killer, killed 17 people' },
+{ img: 'images/IMG_3548.jpg', type: 'criminal', name: 'Timothy McVeigh', info: 'Oklohama city bombing' },
+{ img: 'images/IMG_3550.jpg', type: 'criminal', name: 'Nikolas Cruz', info: 'Shot 14 students and 3 staff members' },
+{ img: 'images/IMG_3551.jpg', type: 'criminal', name: 'Matt de Grood', info: 'Commited and attack on a university' },
+{ img: 'images/IMG_3552.jpg', type: 'criminal', name: 'Andres Breivik', info: 'Mass murderer, killed 69 people' },
+{ img: 'images/File_032.png', type: 'criminal', name: 'Giovanni Vicenete', info: 'International drug distributer' },
+
+ 
 
 
-/* ===================== QUESTIONS (SAMPLE – REPLACE LATER) ===================== */
-// ================= QUESTIONS (40 PLACEHOLDERS) =================
-const QUESTIONS = [
 
-/* ================= STYLE 1 — IMAGE (8) ================= */
 
-    {
-      id: 1,
-      type: "image",
-      media: "images/portugal.PNG",
-      question: "Q, What country flag is this ?",
-      choices: ["Italy", "Portugal", "Spain"],
-      correct: 2
-    },
-    {
-      id: 2,
-      type: "image",
-      media: "images/Mexico.PNG",
-      question: "Q, What country flag is this ?",
-      choices: ["Mexico", "Colombia", "Venezuela"],
-      correct: 1
-    },
-    {
-      id: 3,
-      type: "image",
-      media: "images/Germany.PNG",
-      question: "Q, What country flag is this ?",
-      choices: ["Germany", "France", "Belgium"],
-      correct: 2
-    },
-    {
-      id: 4,
-      type: "image",
-      media: "images/IMG_3310.jpg",
-      question: "Q, Where is the statue of liberty ?",
-      choices: ["Saudi arabia", "Dubai", "USA"],
-      correct: 1
-    },
-    {
-      id: 5,
-      type: "image",
-      media: "images/IMG_3312.jpg",
-      question: "Q, Mount everest is in which country ?",
-      choices: ["Philpines", "India", "China"],
-      correct: 0
-    },
-    {
-      id: 6,
-      type: "image",
-      media: "images/IMG_3313.jpg",
-      question: "Q, What's the capital city of france ?",
-      choices: ["London", "Paris", "Dubai"],
-      correct: 2
-    },
-    {
-      id: 7,
-      type: "image",
-      media: "images/IMG_3315.jpg",
-      question: "Q, Egypt is in which continent ?",
-      choices: ["Asia", "Africa", "Europe"],
-      correct: 0
-    },
-    {
-      id: 8,
-      type: "image",
-      media: "images/IMG_3316.jpg",
-      question: "Q, The Great wall of china is in which country ?",
-      choices: ["China", "India", "Japan"],
-      correct: 1
-    },
-    {
-      id: 9,
-      type: "image",
-      media: "images/IMG_3317.jpg",
-      question: "Q, What's the capital city of Japan ?",
-      choices: ["Bangkok", "Beijing", "Tokyo"],
-      correct: 1
-    },{
-      id: 10,
-      type: "image",
-      media: "images/IMG_3318.jpg",
-      question: "Q, What's the capital city of Brazil ?",
-      choices: ["Brasilia", "Rio", "Sau paulo"],
-      correct: 0
-    },{
-      id: 11,
-      type: "image",
-      media: "images/IMG_3319.jpg",
-      question: "Q, Which country uses pounds ?",
-      choices: ["USA", "United kingdom", "China"],
-      correct: 2
-    },{
-      id: 12,
-      type: "image",
-      media: "images/IMG_3320.jpg",
-      question: "Q, What is the longest river in the world ?",
-      choices: ["Amazon", "Nile", "Yangtze"],
-      correct: 0
-    },{
-      id: 13,
-      type: "image",
-      media: "images/IMG_3321.jpg",
-      question: "Q, Who is this celebrity ?",
-      choices: ["Brad Pitt", "Leonardo Dicaprio", "Tom Cruise"],
-      correct: 0
-    },{
-      id: 14,
-      type: "image",
-      media: "images/IMG_3322.jpg",
-      question: "Q, Who is this celebrity ?",
-      choices: ["Emma watson", "Natalie portman", "Emma Stone"],
-      correct: 0
-    },{
-      id: 15,
-      type: "image",
-      media: "images/IMG_3323.jpg",
-      question: "Q, Who is this celebrity ?",
-      choices: ["Johnny Depp", "Chris Evans", "Mark Ruffalo"],
-      correct: 0
-    },{
-      id: 16,
-      type: "image",
-      media: "images/IMG_3324.jpg",
-      question: "Q, Who is this celebrity ?",
-      choices: ["Jennifer Aniston", "Orlando Bloom", "Lisa kudrow"],
-      correct: 2
-    },{
-      id: 17,
-      type: "image",
-      media: "images/IMG_3325.jpg",
-      question: "Q, Who is this celebrity ?",
-      choices: ["Elon Musk", "jeff Bezos", "Mark Zuck"],
-      correct: 0
-    },{
-      id: 18,
-      type: "image",
-      media: "images/IMG_3326.jpg",
-      question: "Q, TWho is this celebrity ?",
-      choices: ["Beynce", "Adele", "Rihana"],
-      correct: 1
-    },{
-      id: 19,
-      type: "image",
-      media: "images/IMG_3327.jpg",
-      question: "Q, Who led french after the revolution ?",
-      choices: ["Elsa", "Napoleon", "Jeffery"],
-      correct: 0
-    },{
-      id: 20,
-      type: "image",
-      media: "images/IMG_3328.jpg",
-      question: "Q, Who crossed the atlantic in a ship ?",
-      choices: ["Colombus", "Napoleon", "Patrick jones"],
-      correct: 0
-    },{
-      id: 21,
-      type: "image",
-      media: "images/IMG_3329.jpg",
-      question: "Q, Who was the first man to step on the moon ?",
-      choices: ["Neil Armstrong", "Buzz Lightyear", "Abraham Lincoln"],
-      correct: 1
-    },{
-      id: 22,
-      type: "image",
-      media: "images/IMG_3330.jpg",
-      question: "Q, Who is this man ?",
-      choices: ["Nelson Mandela", "Abraham lincoln", "malcolm x"],
-      correct: 2
-    },{
-      id: 23,
-      type: "image",
-      media: "images/IMG_3331.jpg",
-      question: "Q, Which one ruled england ?",
-      choices: ["Elsa the second", "Elizabeth", "Cinderella"],
-      correct: 0
-    },{
-      id: 24,
-      type: "image",
-      media: "images/IMG_3332.jpg",
-      question: "Q, TWho is this celebrity ?",
-      choices: ["Robert Downey", "Johnny Depp", "Iron man"],
-      correct: 2
-    },{
-      id: 25,
-      type: "image",
-      media: "images/IMG_3333.jpg",
-      question: "Q, TWho is this rapper ?",
-      choices: ["Kanye west", "Travis scott", "DJ khaled"],
-      correct: 2
-    },{
-      id: 26,
-      type: "image",
-      media: "images/IMG_3334.jpg",
-      question: "Q, TWho is this rapper ?",
-      choices: ["Eminem", "Justin bieber", "Elon Musk"],
-      correct: 0
-    },{
-      id: 27,
-      type: "image",
-      media: "images/IMG_3335.jpg",
-      question: "Q, TWho is this celebrity ?",
-      choices: ["Jay z", "Eminem", "Kanye West"],
-      correct: 2
-    },{
-      id: 28,
-      type: "image",
-      media: "images/IMG_3336.jpg",
-      question: "Q, When did the Berlin wall fall ?",
-      choices: ["1976", "1989", "1986"],
-      correct: 1
-    },{
-      id: 29,
-      type: "image",
-      media: "images/IMG_3337.jpg",
-      question: "Q, TWho is this rapper ?",
-      choices: ["Drake", "Kendrick", "Jay z"],
-      correct: 1
-    },{
-      id: 30,
-      type: "image",
-      media: "images/IMG_3338.jpg",
-      question: "Q, TWho is this celebrity ?",
-      choices: ["Fanum", "Kai Cennat", "Duke Dennis"],
-      correct: 1
-    },{
-      id: 31,
-      type: "image",
-      media: "images/IMG_3339.jpg",
-      question: "Q, Who is this player ?",
-      choices: ["Iniesta", "Neymar", "Suarez"],
-      correct: 2
-    },{
-      id: 32,
-      type: "image",
-      media: "images/IMG_3340.jpg",
-      question: "Q, Which country's flag has a red cross on white ?",
-      choices: ["Switzerland", "India", "denmark"],
-      correct: 1
-    },{
-      id: 33,
-      type: "image",
-      media: "images/IMG_3342.jpg",
-      question: "Q, When did the world war 2 ended ?",
-      choices: ["1940", "1945", "1935"],
-      correct: 0
-    },{
-      id: 34,
-      type: "image",
-      media: "images/IMG_3343.jpg",
-      question: "Q, Who is this celebrity ?",
-      choices: ["Adolf Hitler", "Joseph Stalin", "Donald Trump"],
-      correct: 0
-    },{
-      id: 35,
-      type: "image",
-      media: "images/IMG_3344.jpg",
-      question: "Q, The White House is in which country ?",
-      choices: ["China", "USA", "Japan"],
-      correct: 1
-    },
+// Add all 40 questions here in the same format
 ];
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
 
-/* ===================== ELEMENTS ===================== */
-const quiz = document.getElementById("quiz");
-const soundGate = document.getElementById("soundGate");
-const timerEl = document.getElementById("timer");
-const scoreEl = document.getElementById("score");
-const mediaEl = document.getElementById("mediaContainer");
-const questionEl = document.getElementById("questionText");
-const choicesEl = document.getElementById("choices");
-const timeUpEl = document.getElementById("timeUp");
-const resultPopup = document.getElementById("resultPopup");
 
-const timerSound = new Audio("sounds/Timer-sound.mp3");
-const pauseSound = new Audio("sounds/pause-sound.mp3");
+shuffleArray(questions);
 
-/* ===================== STATE ===================== */
-let quizQuestions = [];
-let index = 0;
-let score = 0;
-let timer = null;
-let timeLeft = 10;
-let locked = true;
-let activeVideo = null;
-let pauseIcon = null;
+let currentIndex = 0;
+let correctAnswers = 0;
 
-/* ===================== START ===================== */
-document.getElementById("enableSound").onclick = () => {
-  soundGate.classList.add("hidden");
-  quiz.style.display = "block";
-  startQuiz();
+const imgEl = document.getElementById('question-img');
+const loadingEl = document.getElementById('loading-text');
+const answerEl = document.getElementById('answer');
+const politicianBtn = document.getElementById('politician-btn');
+const criminalBtn = document.getElementById('criminal-btn');
+const nextBtn = document.getElementById('next-btn');
+const questionNumberEl = document.getElementById('question-number');
+const correctCountEl = document.getElementById('correct-count');
+
+// Show current question
+function showQuestion() {
+if (currentIndex < questions.length) {
+// Update counters
+questionNumberEl.textContent = `Question: ${currentIndex + 1} / ${questions.length}`;
+correctCountEl.textContent = `Correct Answers: ${correctAnswers}`;
+
+// Reset answer and next button
+answerEl.innerHTML = '';
+nextBtn.style.display = 'none';
+politicianBtn.disabled = false;
+criminalBtn.disabled = false;
+
+// Show loading text
+loadingEl.style.display = 'block';
+imgEl.style.display = 'none';
+
+// Load image
+imgEl.src = questions[currentIndex].img;
+imgEl.onload = () => {
+loadingEl.style.display = 'none';
+imgEl.style.display = 'block';
 };
-
-document.getElementById("restart").onclick = () => {
-  resultPopup.classList.add("hidden");
-  quiz.style.display = "none";
-  soundGate.classList.remove("hidden");
-};
-
-/* ===================== QUIZ ===================== */
-function startQuiz() {
-  score = 0;
-  index = 0;
-  scoreEl.textContent = "0/10";
-  quizQuestions = [...QUESTIONS].sort(() => Math.random() - 0.5).slice(0, 10);
-  loadQuestion();
+} else {
+// Game completed
+imgEl.style.display = 'none';
+loadingEl.style.display = 'none';
+answerEl.innerHTML = `<h2>Game Over!</h2><p>You got ${correctAnswers} out of ${questions.length} correct!</p>`;
+politicianBtn.style.display = 'none';
+criminalBtn.style.display = 'none';
+nextBtn.style.display = 'none';
+}
 }
 
-/* ===================== RESET ===================== */
-function resetUI() {
-  clearTimer();
-  locked = true;
-  activeVideo = null;
-  pauseIcon?.remove();
-  pauseIcon = null;
+// Handle user choice
+function handleChoice(choice) {
+const q = questions[currentIndex];
+const isCorrect = choice === q.type;
+if (isCorrect) correctAnswers++;
 
-  mediaEl.innerHTML = "";
-  questionEl.textContent = "";
-  choicesEl.innerHTML = "";
+// Show feedback
+answerEl.innerHTML = `
+<div class="feedback" style="color: ${isCorrect ? 'blue' : 'red'}; font-weight: bold; font-size: 18px;">
+${isCorrect ? 'Correct!' : 'Wrong!'}
+</div>
+<div class="name">${q.name}</div>
+<div class="info">${q.info}</div>
+`;
+
+// Disable buttons and show next button
+politicianBtn.disabled = true;
+criminalBtn.disabled = true;
+nextBtn.style.display = 'inline-block';
+
+// Update correct answers counter immediately
+correctCountEl.textContent = `Correct Answers: ${correctAnswers}`;
 }
 
-/* ===================== LOAD ===================== */
-function loadQuestion() {
-  resetUI();
-  const q = quizQuestions[index];
-
-  if (q.type === "image") {
-    showImage(q.media);
-    showQuestion(q);
-    startTimer();
-  }
-
-  if (q.type === "imageReveal") {
-    showImage(q.media);
-    showQuestion(q);
-    startTimer();
-  }
-
-  if (q.type === "videoEnd") {
-    playVideoEnd(q);
-  }
-
-  if (q.type === "videoPause") {
-    playVideoPause(q);
-  }
-
-  if (q.type === "imageRevealVideo") {
-    showImage(q.media);
-    showQuestion(q);
-    startTimer();
-  }
+// Go to next question
+function nextQuestion() {
+currentIndex++;
+showQuestion();
 }
 
-/* ===================== MEDIA ===================== */
-function showImage(src) {
-  const img = document.createElement("img");
-  img.src = src;
-  mediaEl.appendChild(img);
-}
+// Event listeners
+politicianBtn.addEventListener('click', () => handleChoice('politician'));
+criminalBtn.addEventListener('click', () => handleChoice('criminal'));
+nextBtn.addEventListener('click', nextQuestion);
 
-function playVideoEnd(q) {
-  const video = document.createElement("video");
-  video.src = q.media;
-  video.autoplay = true;
-  video.playsInline = true;
-  video.controls = false;
-
-  mediaEl.appendChild(video);
-  activeVideo = video;
-
-  video.onended = () => {
-    showQuestion(q);
-    startTimer();
-  };
-}
-
-function playVideoPause(q) {
-  const video = document.createElement("video");
-  video.src = q.media;
-  video.autoplay = true;
-  video.playsInline = true;
-
-  mediaEl.appendChild(video);
-  activeVideo = video;
-
-  let paused = false;
-
-  video.addEventListener("timeupdate", () => {
-    if (!paused && video.currentTime >= q.pauseAt) {
-      paused = true;
-      video.pause();
-      pauseSound.play();
-      showPauseIcon();
-
-      setTimeout(() => {
-        showQuestion(q);
-        startTimer();
-      }, 1000);
-    }
-  });
-}
-
-/* ===================== QUESTION UI ===================== */
-function showQuestion(q) {
-  locked = false;
-  questionEl.textContent = q.question;
-
-  q.choices.forEach((c, i) => {
-    const div = document.createElement("div");
-    div.className = "choice";
-    div.textContent = c;
-    div.onclick = () => answer(i);
-    choicesEl.appendChild(div);
-  });
-}
-
-/* ===================== TIMER ===================== */
-function startTimer() {
-  clearTimer();
-  timeLeft = 10;
-  timerEl.textContent = "0:10";
-  timerSound.currentTime = 0;
-  timerSound.play();
-
-  timer = setInterval(() => {
-    timeLeft--;
-    timerEl.textContent = `0:0${timeLeft}`;
-    if (timeLeft <= 0) handleTimeout();
-  }, 1000);
-}
-
-function clearTimer() {
-  clearInterval(timer);
-  timer = null;
-  timerSound.pause();
-}
-
-/* ===================== ANSWER ===================== */
-function answer(i) {
-  if (locked) return;
-  locked = true;
-  clearTimer();
-  pauseIcon?.remove();
-
-  const q = quizQuestions[index];
-  const els = document.querySelectorAll(".choice");
-
-  els.forEach((el, idx) => {
-    el.classList.add(idx === q.correct ? "correct" : "wrong");
-  });
-
-  if (i === q.correct) score++;
-  scoreEl.textContent = `${score}/10`;
-
-  if (q.type === "videoPause" && activeVideo) activeVideo.play();
-
-  if (q.type === "imageReveal") {
-    mediaEl.innerHTML = "";
-    showImage(q.reveal);
-  }
-
-  if (q.type === "imageRevealVideo" && i === q.correct) {
-    mediaEl.innerHTML = "";
-    playVideoEnd({ media: q.revealVideo });
-  }
-
-  setTimeout(next, 2000);
-}
-
-/* ===================== TIME UP ===================== */
-function handleTimeout() {
-  clearTimer();
-  timeUpEl.classList.remove("hidden");
-
-  pauseIcon?.remove();
-  if (activeVideo) activeVideo.play();
-
-  setTimeout(() => {
-    timeUpEl.classList.add("hidden");
-    next();
-  }, 2000);
-}
-
-/* ===================== FLOW ===================== */
-function next() {
-  index++;
-  if (index < quizQuestions.length) loadQuestion();
-  else setTimeout(showResult, 3000);
-}
-
-
-function showResult() {
-  const percent = Math.round((score / 10) * 100);
-  resultPopup.classList.remove("hidden");
-  document.getElementById("resultPercent").textContent = percent + "%";
-
-  if (percent <= 24) setResult("Knowledge Novice", "Looks like you might need a bit more \n brushing up time to study");
-  else if (percent <= 49) setResult("Knowledge Adventurer", "You're on the right path, \n but might need a bit more practice");
-  else if (percent <= 74) setResult("Knowledge Explorer", "You've got a good grasp but there's \n room to grow Keep exploring");
-  else setResult("Knowledge Master", "You've got a sharp mind! Everything's \n running at peak knowledge");
-}
-
-function setResult(t, m) {
-  document.getElementById("resultTitle").textContent = t;
-  document.getElementById("resultMsg").textContent = m;
-}
-
-/* ===================== PAUSE ICON ===================== */
-function showPauseIcon() {
-  pauseIcon = document.createElement("img");
-  pauseIcon.src = "icons/Pause.png";
-  pauseIcon.className = "pause-icon";
-  mediaEl.appendChild(pauseIcon);
-}
-
-
-
+// Start the game immediately
+showQuestion();
 
