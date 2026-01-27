@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Rot Check</title>
-      <meta name="viewport" content="width=device-width,  initial-scale=1.0">
-      <meta name="description" content="Is it over for you? RotCheck is the best place to test how deeply rotted your brain actually is. If you know the lore, you are already cooked. Take the quiz and see your rank.">
-      <link rel="stylesheet" href="question.css">
-      <link rel="stylesheet" href="index.html">
-    </head>
-    <body>
-      <header class="navbar">
-                <div class="icon-div">
-                    <img class="icon-img" src="Image/Web-icon.png" onclick="window.location.href='index.html'">
-                    <p class="icon-text">Rot <br> Check</p>
-                </div>
-                <!-- Desktop Menu -->
-                <nav class="desktop-menu">
-                    <a href="index.html">Home</a>
-                    <a href="Terms of Services.html">Terms of Services</a>
-                    <a href="privacy&policy.html">privacy&policy</a>
-                </nav>
-                <!-- Hamburger Icon -->
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </header>
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="index.html">Home</a>
-            <a href="Terms of Services.html">Terms of Services</a>
-            <a href="privacy&policy.html">Privacy & Policy</a>
+<head>
+  <link rel="stylesheet" href="question.css">
+  <link rel="stylesheet" href="index.html">
+  <link rel="stylesheet" href="Header.css">
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politician or Criminal Game</title>
+<style>
+
+</style>
+</head>
+<body>
+         <header class="navbar">
+            <div class="icon-div">
+                <img class="icon-img" src="Image/Newicon.png" onclick="window.location.href='index.html'">
+              </div>
+            <!-- Desktop Menu -->
+            <nav class="desktop-menu">
+                <a href="question.html">Start Game</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="Terms of Services.html">Terms of service</a>
+                <a href="privacy&policy.html">privacy & policy</a>
+            </nav>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="question.html">Start quiz</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy&policy.html">Privacy & Policy</a>
+        <a href="Terms of Services.html">Terms & Conditions</a>
+    </div>
+
+<h1>Politician or Criminal?</h1>
+
+<div id="counters">
+<span id="question-number">Question: 1 / 40</span> |
+<span id="correct-count">Correct Answers: 0</span>
+</div>
+
+<div id="question-container">
+<img id="question-img" src="" alt="Question Image">
+<div id="loading-text">Loading image...</div>
+</div>
+
+<div class="btn-div">
+<button class="btn-one" id="politician-btn">Politician</button>
+<button class="btn-two" id="criminal-btn">Criminal</button>
+</div>
+
+<div id="answer"></div>
+<button class="btn" id="next-btn">Next</button>
+
+<footer>
+        <div class="links-div">
+            <a href="question.html">Game</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy&policy.html">Privacy & policy</a>
+            <a href="Terms of Services.html">Terms of condition</a>
+            <hr style="width: 350px; color: rgb(129, 129, 129); margin-top: 20px; height: 1px;">
+            <div class="copy-div">
+            <p class="copy-text"> &copy;RotCheck.online All rights preserved</p>
         </div>
-
-        <!-- SOUND GATE -->
-        <div id="soundGate" class="overlay">
-          <button id="enableSound" class="overlay-btn">Start Quiz</button>
         </div>
+        
+    </footer>
 
-        <!-- TIME UP -->
-        <div id="timeUp" class="overlay hidden">
-          <h1>Time is up</h1>
-        </div>
-
-        <!-- RESULT -->
-        <div id="resultPopup" class="overlay hidden">
-          <div class="resultBox">
-            <h1 class="result-h1">Score</h1>
-            <h2 id="resultPercent"></h2>
-            <h2 id="resultTitle"></h2>
-            <p id="resultMsg"></p>
-            <button id="restart">Close</button>
-          </div>
-        </div>
-
-        <!-- QUIZ -->
-        <div id="quiz">
-
-          <div class="topBar">
-            <div id="timer">0:10</div>
-            <div id="score">0/10</div>
-          </div>
-
-          <div id="mediaContainer"></div>
-          <div id="questionText">Question goes here</div>
-          <div id="choices"></div>
-
-        </div>
-
-        <script src="script.js"></script>
-        <script src="https://pl28494363.effectivegatecpm.com/0e/29/32/0e293222493cac6d75ecc11ed66bf88f.js"></script>
-    </body>
+<script src="script.js"></script>
+</body>
 </html>
-
-
-
