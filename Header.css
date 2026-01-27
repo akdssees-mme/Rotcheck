@@ -11,11 +11,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-right: 45px;
     padding-left: 25px;
-    margin-top: 5px;
+    z-index: 1000;
 }
 
 .icon-div{
@@ -23,21 +23,20 @@
     flex-direction: row;
     margin: 0;
     align-items: center;
-}
+}   
 .icon-img{
-    width: 55px;
+    width: 75px;
     padding: 0;
     margin: 0;
 }
 .icon-text{
     font-family: "Rowdies", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-style: normal;
-    color: rgba(0, 136, 255, 0);
+    color: rgb(54, 111, 254);
     line-height: 17px;
-    padding-left: 2px;
-    font-size: 18px;
+    font-size: 16px;
     background-image: linear-gradient(135deg, #257cff 0%, #6464643e 250%);    background-clip: text;
 }
 
@@ -51,8 +50,11 @@
 
 .desktop-menu a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgba(69, 69, 69, 0.822);
     font-weight: 500;
+}
+.desktop-menu a:hover{
+    text-decoration: underline;
 }
 
 /* Hamburger Icon */
@@ -67,7 +69,8 @@
     width: 27px;
     height: 2px;
     border-radius: 100px;
-    background: rgb(255, 255, 255);
+    background: rgba(69, 69, 69, 0.822);
+    border-radius: 25%;
     transition: 0.4s;
 }
 
@@ -90,11 +93,11 @@
     top: 50%;
     left: 50%;
     transform: translate(150%, -50%);
-    width: 418px;
-    height: 570px;
+    width: 350px;
+    height: 400px;
     margin-top: 53px;
     padding-top: 110px;
-    padding-bottom: 500px;
+    padding-bottom: 400px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -102,8 +105,9 @@
     background: rgba(0, 0, 0, 0.058);
     backdrop-filter: blur(15px);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(170, 170, 170, 0.46);
     transition: 0.4s ease;
+    z-index: 1000;
 }
 
 /* Show Menu */
@@ -116,16 +120,17 @@
     padding-bottom: 12px;
     border-radius: 10px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transition: 0.3s;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     margin-right: 50px;
     margin-left: 50px;
 }
 
 .mobile-menu a:hover {
-    background:  rgb(0, 0, 12);;
+    background:  rgb(0, 0, 12);
+    color: white;
 }
 
 /* Responsive */
