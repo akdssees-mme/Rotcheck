@@ -3,6 +3,8 @@ html{
     margin: 0;  
 }
 body {
-    height: 200vh;
-    background-color: rgb(0, 0, 20);
+    
+    background-color: rgb(237, 237, 237);
+    padding-bottom: 50px;
+    
 }
